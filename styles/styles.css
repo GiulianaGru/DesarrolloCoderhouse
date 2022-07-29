@@ -1,0 +1,526 @@
+/*----------------- Estilos Generales -----------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /* font-size: 62.5%; */
+    font-family: “Helvetica Neue”,“helvetica”,“arial”,sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+
+.linea {
+    background-color: grey;
+    height: 0.1px;
+}
+
+.tituloPrincipal {
+    margin: 20px;
+    text-align: start;
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+    line-height: 1.2;
+    display: inline-block;
+}
+
+.subtituloSeccion {
+    margin: 20px;
+    text-align: start;
+    font-size: 30px;
+    color: white;
+}
+
+.marginHorizontal {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.imagenPrincipal {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .imagenPrincipal{
+        align-content: center;
+        width: 100%;
+    }
+
+    .tituloPrincipal {
+        font-size: 30px;
+    }
+
+    .subtituloSeccion {
+        font-size: 25px;
+    }
+}
+
+/*----------------- Header General -----------------*/
+header{
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav {
+    align-self: center;
+}
+
+nav ul{
+    list-style: none;
+}
+
+.navItem {
+    margin-left: 20px;
+    display: inline;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navItem a {
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 20px;
+    }
+
+    nav {
+        margin: 0px;
+    }
+
+    .navItem {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .navItem {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+}
+
+/*----------------- Items exposiciones -----------------*/
+.seccionExposicion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tituloExposicion {
+    color: white;
+    font-size: 25px;
+}
+
+.informacionExposicion {
+    color: white;
+    font-size: 15px;
+}
+
+.exposicion {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imagenExpo {
+    margin-left: 20px;
+    width: 400px;
+    height: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.itemExpo {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .seccionExposicion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .exposicion {
+        align-items: center;
+    }
+
+    .imagenExpo {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/*----------------- Item visitas -----------------*/
+.visitas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imagenVisita {
+    width: 500px;
+    margin: 20px;
+}
+
+.contenidoVisitas {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .visitas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenVisita {
+        width: 400px;
+        margin: 20px;
+    }
+}
+
+/*----------------- Pagina Exposicion -----------------*/
+.containerExposicion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+    .containerExposicion {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*----------------- Pagina visitas -----------------*/
+.tituloplanificaVisita {
+    margin: 20px;
+    color: white;
+}
+
+/*----------------- Pagina galeria -----------------*/
+.tituloGaleriafotos {
+    margin: 20px;
+    color: white;
+}
+
+/*----------------- Footer -----------------*/
+footer {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.redes {
+    margin: 10px;
+    text-align: center;
+    color:black;
+    font-size: 20px;
+}
+
+.iconosRedes {
+    width: 50px;
+    height: 50px;
+}
+
+.containerIconos {
+    align-self: center;
+}
+
+/*----------------- Visitas -----------------*/
+.tituloReserva{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.botonReserva {
+    height: 20px;
+    color: black;
+}
+
+.informacionVisitas {
+    display: inline-flex;
+}
+
+.tituloVisita {
+    color: white;
+    font-size: 25px;
+}
+
+/*----------------- Galeria -----------------*/
+
+.seccionObras {
+    text-align: center;
+    padding: 30px 0px 0px 30px;
+}
+
+.seccionInformacion {
+    text-align: center;
+    padding: 30px 0px 0px 30px;
+}
+
+/*----------------- Card Vertical -----------------*/
+.cardVertical {
+    background-color: #a5a5a5;
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    margin: 40px 10px 10px 10px;
+}
+
+.cardVertical__imagen {
+    width: 100%;
+    height: 40%;
+}
+
+.cardVertical__info {
+    height: 60%;
+    padding: 30px;
+}
+
+.cardVertical__info__titulo {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.cardVertical__info__texto {
+    color: #575759;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+/*----------------- Seccion Informacion -----------------*/
+
+.containerInformacion {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.informacionPpal{
+    width: 60%;
+}
+
+.informacionSecundaria{
+    width: 30%;
+}
+
+.informacionPpal__titulo {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.informacionPpal__texto {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.informacionSecundaria__titulo {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px
+}
+
+.informacionSecundaria__texto {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 10px
+}
+
+@media screen and (max-width: 768px){
+    .containerInformacion {
+        flex-direction: column;
+    }
+
+    .informacionPpal{
+        width: 100%;
+    }
+
+    .informacionSecundaria{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+}
+
+
+/*----------------- Pagina Contacto -----------------*/
+
+.seccionContacto {
+    text-align: center;
+}
+
+.containerContacto {
+    display: inline-flex;
+}
+
+.containerFormulario {
+    width: 50%;
+    height: 500px;
+}
+
+.containerVideo {
+    width: 50%;
+}
+
+.formulario {
+    text-align: center;
+    width: 550px;
+    background-color: #a5a5a5;
+}
+
+.formulario__email,
+.formulario__nombre{
+    padding-left: 10px;
+    background-color: #a5a5a5;
+    border-bottom:1px solid rgba(0,0,0,.1);
+    text-transform: uppercase;
+    color:#000000;
+}
+
+.formulario__titulo {
+    padding-top: 20px;
+}
+
+.botonEnviar {
+    margin: 5px;
+    margin-bottom: 20px;
+    height:50px;
+    width: 70%;
+    border: bottom 1px solid rgba(0,0,0,.1);
+}
+
+input {
+    margin: 5px;
+    padding-left: 10px;
+    height:50px;
+    width: 90%;
+    border: none;
+}
+
+textarea {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #a5a5a5;
+    width: 90%;
+}
+
+/* ----------------- grids -----------------*/
+.gridIndex {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header"
+    "image"
+    "sectionExpo"
+    "sectionGalery"
+    "footer";
+}
+
+.header { grid-area: header; }
+
+.image { grid-area: image; }
+
+.sectionGalery { grid-area: sectionGalery; }
+
+.footer { grid-area: footer; }
+
+.gridVisitas {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "header"
+    "image"
+    "sectionVisit"
+    "footer";
+}
+.header { grid-area: header; }
+.image { grid-area: image; }
+.sectionVisit { grid-area: sectionVisit; }
+.footer { grid-area: footer; }
+
+
+/*----------------- Animacion linea en texto -----------------*/
+  .hvr-underline-from-center {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      overflow: hidden;
+  }
+
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #ffffff;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
