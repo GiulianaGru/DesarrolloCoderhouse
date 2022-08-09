@@ -6,7 +6,7 @@
 
 html{
     /* font-size: 62.5%; */
-    font-family: “Helvetica Neue”,“helvetica”,“arial”,sans-serif;
+    font-family: "Helvetica Neue","helvetica","arial",sans-serif;
 }
 
 a {
@@ -309,37 +309,17 @@ footer {
 }
 
 /*----------------- Card Vertical -----------------*/
-.cardVertical {
+.card {
     background-color: #a5a5a5;
     width: 300px;
-    height: 400px;
+    height: 370px;
     display: inline-block;
     margin: 40px 10px 10px 10px;
 }
 
-.cardVertical__imagen {
-    width: 100%;
-    height: 40%;
-}
-
-.cardVertical__info {
-    height: 60%;
-    padding: 30px;
-}
-
-.cardVertical__info__titulo {
-    color: black;
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-.cardVertical__info__texto {
-    color: #575759;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: left;
+.card-text-galery {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /*----------------- Seccion Informacion -----------------*/
@@ -474,11 +454,12 @@ textarea {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr 0.4fr 0.4fr 0.1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
     "header"
+    "carousel"
     "image"
     "sectionExpo"
     "sectionGalery"

@@ -10,30 +10,60 @@
     </head>
     <body>
         <div class="gridIndex">
-            <header class="header marginHorizontal">
-                <img class="logo" src="./images/logoGA.jpg" alt="Esto es un logo">
-                <nav>
-                    <ul>
-                        <li class="navItem hvr-underline-from-center">
-                            <a href="">INICIO</a>
-                        </li>
-                        <li class="navItem hvr-underline-from-center">
-                            <a href="./pages/visitas.html">VISITAS</a>
-                        </li>
-                        <li class="navItem hvr-underline-from-center">
-                            <a href="./pages/exposiciones.html">EXPOSICIONES</a>
-                        </li>
-                        <li class="navItem hvr-underline-from-center">
-                            <a href="./pages/galeria.html">GALERIA</a>
-                        </li>
-                        <li class="navItem hvr-underline-from-center">
-                            <a href="./pages/contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+            <nav class="navbar navbar-expand-lg navbar-dark static-top">
+                <div class="container">
+                    <img class="logo" src="./images/logoGA.jpg" alt="Esto es un logo" >
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item navItem hvr-underline-from-center">
+                                <a class="nav-link" href="">INICIO</a>
+                            </li>
+                            <li class="nav-item navItem hvr-underline-from-center">
+                                <a class="nav-link" href="./pages/visitas.html">VISITAS</a>
+                            </li>
+                            <li class="nav-item navItem hvr-underline-from-center">
+                                <a class="nav-link" href="./pages/exposiciones.html">EXPOSICIONES</a>
+                            </li>
+                            <li class="nav-item navItem hvr-underline-from-center">
+                                <a class="nav-link" href="./pages/galeria.html">GALERIA</a>
+                            </li>
+                            <li class="nav-item navItem hvr-underline-from-center">
+                                <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="carouselIndex" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/carousel/carrusell%201.webp" class="d-block w-100" alt="imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carousel/carruselll%202.jpg" class="d-block w-100" alt="imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carousel/carrusell%203.jpg" class="d-block w-100" alt="imagen 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndex" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndex" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
             <div class="image">
-                <img class="imagenPrincipal" src="./images/imagenprincipal.jpg" alt="Esto es una imagen">
                 <h1 class="tituloPrincipal marginHorizontal">Nombre de la Muestra en ese Momento</h1>
                 <div class="linea"></div>
             </div>

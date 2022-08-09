@@ -4,33 +4,39 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="../styles/styles.css">
         <title>Galeria de Arte</title>
     </head>
     <body>
         <div class="gridVisitas">
-            <header class="header marginHorizontal">
-                <img class="logo" src="../images/logoGA.jpg" alt="Esto es un logo">
-                <nav>
-                    <ul>
-                        <li class="navItem hvr-underline-from-center">
-                            <a href="../index.html">INICIO</a>
-                        </li>
-                        <li class="navItem hvr-underline-from-center">
-                            <a href="">VISITAS</a>
-                        </li>
-                        <li class="navItem hvr-underline-from-center">
-                            <a href="../pages/exposiciones.html">EXPOSICIONES</a>
-                        </li>
-                        <li class="navItem hvr-underline-from-center">
-                            <a href="../pages/galeria.html">GALERIA</a>
-                        </li>
-                        <li class="navItem hvr-underline-from-center">
-                            <a href="../pages/contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+            <nav class="navbar navbar-expand-lg navbar-dark static-top">
+                <div class="container">
+                    <img class="logo" src="../images/logoGA.jpg" alt="Esto es un logo" >
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item navItem hvr-underline-from-center">
+                                <a class="nav-link" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item navItem hvr-underline-from-center">
+                                <a class="nav-link" href="./visitas.html">VISITAS</a>
+                            </li>
+                            <li class="nav-item navItem hvr-underline-from-center">
+                                <a class="nav-link" href="./exposiciones.html">EXPOSICIONES</a>
+                            </li>
+                            <li class="nav-item navItem hvr-underline-from-center">
+                                <a class="nav-link" href="./galeria.html">GALERIA</a>
+                            </li>
+                            <li class="nav-item navItem hvr-underline-from-center">
+                                <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <div>
                 <img class="imagenPrincipal image" src="../images/imagenprincipal.jpg" alt="Esto es una imagen">
                 <div class="containerTitulo titleSection">
@@ -70,4 +76,5 @@
             </footer>
         </div>
     </body>
+    <script src="../js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
